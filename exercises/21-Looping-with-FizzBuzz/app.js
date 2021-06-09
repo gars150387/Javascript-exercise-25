@@ -1,9 +1,19 @@
 function fizzBuzz() {  
     // Your code here
-let n=0;
-while(n<100){
-    console.log(n)
-    n++;
+    for (let i =0;i<100;i++){
+        if(i % 3 == 0){
+            return 'Fizz';
+        }
+        else if (i % 5 ==0){
+            return 'Buzz';
+        }
+        else if ( i % 3 == 0 && i % 5 ==0){
+            return 'FizzBuzz';
+        }
+        else {
+            return i;
+        }
+    }
 }
 
-fizzBuzz();
+console.log(fizzBuzz(100));
