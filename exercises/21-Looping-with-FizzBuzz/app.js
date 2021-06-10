@@ -1,19 +1,17 @@
 function fizzBuzz() {  
     // Your code here
-    for (let i =0;i<100;i++){
-        if(i % 3 == 0){
-            return 'Fizz';
-        }
-        else if (i % 5 ==0){
-            return 'Buzz';
-        }
-        else if ( i % 3 == 0 && i % 5 ==0){
-            return 'FizzBuzz';
-        }
-        else {
-            return i;
-        }
-    }
+for (let i=0; i<100; i++){
+  console.log(i)
+  if (i % 3 === 0 ){
+    console.log('Ping')
+  }
+  else if (i % 5 === 0){
+    console.log('Pong')
+  }
+  else if (i % 3 === 0 || i % 5 === 0){
+    console.log('PingPong')
+  }
+}
 }
 
 console.log(fizzBuzz(100));
